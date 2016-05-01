@@ -1,0 +1,24 @@
+PImage img;
+PImage img2;
+PImage img3;
+
+void setup(){
+img = loadImage("campo.jpg");
+size(800,600);
+background(img); 
+}
+
+
+void draw(){
+  
+  if(mousePressed){
+    img2 = loadImage("barcelona.png");
+    image(img2,mouseX, mouseY, 100, 100);
+  
+  }else{  
+    img3 = loadImage("madrid.png");
+    image(img3,mouseX, mouseY, 100, 100);
+  
+  }
+  
+}
